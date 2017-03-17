@@ -1,0 +1,11 @@
+spring: 
+  application: 
+    name: config-server
+
+server: 
+  port: 7001
+  
+spring: 
+  cloud: 
+    config: 
+      server: 

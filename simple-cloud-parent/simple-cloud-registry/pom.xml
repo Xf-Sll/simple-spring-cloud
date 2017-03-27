@@ -25,6 +25,7 @@
 	</dependencies>
 	
 	<build>
+		<!-- mvn clean package -Dmaven.test.skip=true docker:build -->
 		<finalName>registry</finalName>
 		
 		<plugins>

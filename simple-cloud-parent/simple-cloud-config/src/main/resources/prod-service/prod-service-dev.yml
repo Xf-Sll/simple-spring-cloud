@@ -1,6 +1,8 @@
 spring: 
   application: 
-    name: prod-service      
+    name: prod-service
+  zipkin:
+    serviceId: zipkin-server
       
 eureka: 
   client: 

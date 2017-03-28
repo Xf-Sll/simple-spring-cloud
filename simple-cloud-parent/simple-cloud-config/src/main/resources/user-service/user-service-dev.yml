@@ -2,7 +2,7 @@ spring:
   application: 
     name: user-service   
   zipkin:
-    base-url: http://zipkin-server:9411   
+    serviceId: zipkin-server
       
 eureka: 
   client: 

@@ -1,0 +1,18 @@
+spring: 
+  application: 
+    name: prod-service
+  cloud: 
+    config: 
+      discovery: 
+        enabled: true
+        serviceId: config-server
+      profile: dev
+
+server: 
+  port: 6666
+      
+eureka: 
+  client: 
+    serviceUrl: 
+      defaultZone: http://localhost:1111/eureka/
+

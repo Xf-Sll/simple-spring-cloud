@@ -1,20 +1,18 @@
 spring: 
   application: 
     name: api-gateway
+  cloud: 
+    config: 
+      discovery: 
+        enabled: true
+        serviceId: config-server
+      profile: dev
 
 server: 
-  port: 5555
-  
-# routes to url
-
-zuul: 
-  routes: 
-    api-a:  
-      path: /api/**
-      serviceId: order-service
-    
-    
+  port: 3333
+      
 eureka: 
   client: 
     serviceUrl: 
       defaultZone: http://localhost:1111/eureka/
+

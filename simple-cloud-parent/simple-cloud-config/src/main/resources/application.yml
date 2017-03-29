@@ -9,7 +9,7 @@ spring:
         health:
           enabled:  false
         native:
-          searchLocations: classpath:/user-service,classpath:/prod-service,classpath:/order-service,classpath:/api-gateway
+          searchLocations: classpath:/shared,classpath:/shared/user-service,classpath:/shared/prod-service,classpath:/shared/order-service,classpath:/shared/api-gateway
 
 server: 
   port: 2222
